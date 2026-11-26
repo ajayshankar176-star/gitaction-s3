@@ -1,11 +1,258 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My DevOps Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaptopCare | Laptop Repair Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #101c35;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #36c2f0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #101c35, #174b78);
+            color: white;
+            padding: 90px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #36c2f0;
+            color: #101c35;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #101c35;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .card .emoji {
+            font-size: 40px;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+            color: #174b78;
+        }
+
+        .price {
+            color: #087dba;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .contact {
+            background: #101c35;
+            color: white;
+        }
+
+        .contact h2 {
+            color: #36c2f0;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        footer {
+            background: #081225;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello from AWS S3!</h1>
-    <p>Deployed automatically using GitHub Actions.</p>
+
+    <header>
+        <h2>💻 LaptopCare</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Expert Laptop Repair Services</h1>
+
+        <p>Fast, Reliable & Affordable Laptop Solutions</p>
+
+        <a href="#contact" class="btn">Book a Repair</a>
+    </div>
+
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <div class="emoji">💻</div>
+                <h3>Laptop Repair</h3>
+                <p>Complete laptop hardware diagnosis and repair.</p>
+                <p class="price">Contact for price</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🖥️</div>
+                <h3>Screen Replacement</h3>
+                <p>Damaged, broken and faulty laptop screen replacement.</p>
+                <p class="price">Contact for price</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">⚡</div>
+                <h3>SSD & RAM Upgrade</h3>
+                <p>Improve laptop performance with SSD and RAM upgrades.</p>
+                <p class="price">Contact for price</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🔧</div>
+                <h3>Software Installation</h3>
+                <p>Operating system installation and software troubleshooting.</p>
+                <p class="price">Contact for price</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🔋</div>
+                <h3>Battery Replacement</h3>
+                <p>Battery diagnosis and replacement services.</p>
+                <p class="price">Contact for price</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🌡️</div>
+                <h3>Overheating Issues</h3>
+                <p>Cooling fan cleaning and thermal maintenance.</p>
+                <p class="price">Contact for price</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">Why Choose LaptopCare?</h2>
+
+        <p>
+            We aim to provide reliable laptop repair solutions
+            with transparent pricing and quality service.
+        </p>
+
+        <p>✔ Professional diagnosis</p>
+        <p>✔ Affordable repair solutions</p>
+        <p>✔ Quality replacement parts</p>
+        <p>✔ Customer-focused service</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p>Need help with your laptop?</p>
+        <p>Contact us to discuss your repair requirements.</p>
+
+        <p>📍 Location: Your City</p>
+        <p>📞 Phone: Your Phone Number</p>
+        <p>📧 Email: yourmail@example.com</p>
+
+        <br>
+
+        <a href="mailto:yourmail@example.com"
+           class="btn">Send an Email</a>
+    </section>
+
+    <footer>
+        <p>© 2026 LaptopCare. All Rights Reserved.</p>
+        <p>Designed with HTML, CSS & GitHub Pages</p>
+    </footer>
+
 </body>
 </html>
